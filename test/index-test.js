@@ -17,9 +17,11 @@ describe('Intro to Mocha', function () {
     });
   });
 
-  describe('favoriteIceCream()', function () {
-    it('should return the correct sentence when passed an icecream flavor', function () {
-      expect(favoriteIceCream('mint chocolate chip')).toEqual('I love mint chocolate chip');
+  describe('favoriteIceCream', () => {
+    it('should return the correct sentence when passed an icecream flavor', () => {
+      const result = favoriteIceCream('mint chocolate chip');
+      const expectedResult = 'I love mint chocolate chip';
+      expect(result).toBe(expectedResult);
     });
   });
 
